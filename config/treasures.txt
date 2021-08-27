@@ -1,0 +1,3 @@
+0 1 Copper
+3 2 Silver
+5 3 Gold

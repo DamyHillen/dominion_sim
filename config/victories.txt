@@ -1,0 +1,3 @@
+2 1 Estate
+5 3 Duchy
+8 6 Province
