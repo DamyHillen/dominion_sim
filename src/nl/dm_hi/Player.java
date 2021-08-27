@@ -24,10 +24,11 @@ public class Player {
         do {
             cardPlayed = strategy.playTurn(deck, hand);
 
-            if(isValidPlay(cardPlayed))
+            if(isValidPlay(cardPlayed)) {
                 System.out.println("Playing " + hand.getCard(cardPlayed) + "\n");
-            else
-                System.out.println("This is not a card you can play!\n");
+                // TODO: Implement actual playing logic
+            } else
+                System.out.println("This is not an action card!\n");
         } while (cardPlayed >= 0);
 
         System.out.println(name + " finished their turn!"); // TODO: Move this to a future GameHandler class
@@ -36,6 +37,6 @@ public class Player {
     public boolean isValidPlay(int cardIndex){
         if(cardIndex < 0 || cardIndex >= hand.cardCount())
             return false;
-        return hand.getCard(cardIndex).isAction() || hand.getCard(cardIndex).isCurse();
+        return hand.getCard(cardIndex).isAction();
     }
 }
