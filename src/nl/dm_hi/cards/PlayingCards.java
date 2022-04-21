@@ -11,5 +11,5 @@ public class PlayingCards {
     public static final VictoryCard DUCHY = new VictoryCard(5, 3, "Duchy");
     public static final VictoryCard PROVINCE = new VictoryCard(8, 6, "Province");
 
-    public static final ActionCard VILLAGE = new ActionCard(3, "Village", "Doesn't do shit atm");
+    public static final ActionCard VILLAGE = new ActionCard(3, "Village", "Doesn't do anything atm");
 }

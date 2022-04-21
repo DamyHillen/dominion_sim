@@ -9,7 +9,7 @@ import nl.dm_hi.strategies.ConsoleStrategy;
 
 import java.util.ArrayList;
 
-public class Main {
+public class Main { // TODO: Use config files for cards
     public static void main(String[] args){
         ArrayList<Card> cards = startingCards();
 
